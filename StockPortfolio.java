@@ -28,7 +28,7 @@ class StockPortfolio {
     // TODO: Calculate total profit or loss
     public double calculateProfit() {
     
-        return (currentPrice - buyingPrice)*this.quantity;
+        return (currentPrice - buyingPrice) * quantity;
     }
 
     // TODO: Calculate current total value of holdings
