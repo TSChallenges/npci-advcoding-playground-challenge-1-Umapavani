@@ -18,8 +18,8 @@ class StockPortfolio {
     // TODO: Update current market price
     public void updatePrice(double newPrice) {
         if(newPrice>0){
-            if(newPrice>this.higestPrice){
-                this.highestPrice = newPrice;
+            if(newPrice>higestPrice){
+                highestPrice = newPrice;
             }
         this.currentPrice = newPrice;
         }
@@ -28,11 +28,11 @@ class StockPortfolio {
     // TODO: Calculate total profit or loss
     public double calculateProfit() {
     
-        return (this.currentPrice - this.buyingPrice)*this.quantity;
+        return (currentPrice - buyingPrice)*this.quantity;
     }
 
     // TODO: Calculate current total value of holdings
     public double getCurrentValue() {
-        return this.currentPrice * this.quantity;
+        return currentPrice * quantity;
     }
 }
